@@ -1,11 +1,175 @@
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
-<title>���̃y�[�W</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<title>JAVA勉強会用</title>
+<script type="text/javascript">
+$(function() {
+   $('#headImage ul').autoChange({effect : 'fade', type : 'repeat', timeout: 5000, speed : 2000});
+});
+</script>
 </head>
 <body>
-
-���߂ăz�[���y�[�W������Ă݂��B
-<br>
-
+<div id="top">
+   <div id="header">
+      <h1><a href="index.html">JAVA勉強会用</a></h1>
+   </div><!-- /#header -->
+   <div id="menu">
+      <ul>
+         <li><a href="sample.html">MENU1</a></li>
+         <li><a href="sample.html">MENU2</a></li>
+         <li><a href="sample.html">MENU3</a></li>
+         <li><a href="sample.html">MENU4</a></li>
+         <li><a href="sample.html">MENU5</a></li>
+      </ul>
+   </div><!-- /#menu -->
+   <div id="headImage">
+      <ul>
+         <li><img src="images/icatch01.jpg" alt="" /></li>
+         <li><img src="images/icatch02.jpg" alt="" /></li>
+         <li><img src="images/icatch03.jpg" alt="" /></li>
+         <li><img src="images/icatch04.jpg" alt="" /></li>
+      </ul>
+   </div><!-- /#headImage -->
+   <div id="contents">
+      <h1>Welcome to my homepage</h1>
+      <div id="main">
+      <h2>管理人より</h2>
+         <h3>テンプレートについて</h3>
+         <p>
+            ヘッダーにアイキャッチ用のイメージ画像を表示するタイプです。画像はフェードしながら自動で切り替わるように設定しています。切り替わる時間やフェードの時間などいろいろオプションが変更できます。画像は差し替えてご利用ください。<br />
+            詳しい使い方は、「<a href="http://www.coolwebwindow.com/weblife_column/coolweb/000318.php">jQueryで画像やテキストを自動で切り替える [Cool Web Window]</a>」をご参考ください。
+         </p>
+         <p>
+            <a href="sample.html">イメージ画像を削除したタイプのサンプルはこちらから。</a>
+         </p>
+         <p>
+            完全幅固定タイプです。<br />
+            全体的な横幅は760px、メインコンテンツ部分540px、サブコンテンツ部分180pxです。<br />
+            右側のサブコンテンツ部分はメニューやバナー等を配置することを想定しました。<br />
+         </p>
+         <p>
+            ヘッダーメニューのサイズがテンプレートの横幅と同じにならないといけないため、メニューの数やメニューひとつ分のサイズによって、テンプレートの幅を調整する必要があります。サンプルでは、メニューひとつ分の横幅を148pxに設定しています。
+         </p>
+         <p>
+         この度初めて、ページの大見出しというものをつけてみました。このページでは｢Welcome to my homepage｣がそれにあたります。サイトによっては不要な場合もあるかと思いますが、その際は削除してください。
+         </p>
+         <p>
+         サブメニューがメインコンテンツより縦の長さがない場合でもきちんと背景色が表示されるように、これまでサブメニュー領域に画像で色を付けていたのですが、逆にメインコンテンツ部分を白色の画像、サブメニューをCSSで簡単に変更できるようにしました。
+         </p>
+         <p>
+         例えば、テンプレートの横幅を変更する際は、メインコンテンツとサブメニューを囲んでいるdiv要素（#contents）に横幅1000pxの画像を指定しているので、CSSにて、
+         <br />
+         #contents {<br />
+         clear:both;<br />
+         width:740px;<br />
+         background: #51000c url(../images/bg_contents.gif) -440px 0 repeat-y;<br />
+         }<br />
+         <br />
+         ここの、-440pxを、『（-1000px）＋（囲んでいるdiv要素の横幅）－（サブメニューの横幅）』の値に変更してください。ややこしくてすみません＞＜
+         </p>
+         <h3>画像について</h3>
+         <p>
+            画像はCoolWebWindow作です。色の変更などの編集も可能です。ご自由にお使いください。
+         </p>
+         <h3>ページ上部への戻りリンクについて</h3>
+         <p>
+            ページ上部への戻りは、JavaScriptを用いて、なめらかにスクロールしながら移動するようにしております。
+         </p>
+         <h2>サンプルタグについて</h2>
+         <p>
+            以下、サンプルタグになります。ご利用の際は参考にしてみてください。
+         </p>
+         <h2>INFORMATION</h2>
+         <dl class="information">
+            <dt><span>2009-04-28</span></dt>
+            <dd>
+               <div>
+                  ○○新聞に取材を受けました。<br />
+               </div>
+            </dd>
+            <dt><span>2009-04-24</span></dt>
+            <dd>
+               <div>
+                  休業のお知らせ。誠に勝手ながら5月2日から6日まで長期休暇日とさせていただきます。ご了承ください。
+               </div>
+            </dd>
+         </dl>
+         <h2>タグサンプル</h2>
+         <h3>h3タグ</h3>
+         <h4>h4タグ</h4>
+         <h5>h5タグ</h5>
+         <h6>h6タグ</h6>
+         <p>
+            <em>強調（em）</em>
+            <strong>より強い強調（strong）</strong>
+            <ins>追加（ins）</ins>
+            <del>削除（del）</del>
+            <br />
+            <a href="#">テキストアンカー</a>
+         </p>
+         <h3>リスト</h3>
+         <h4>普通のリスト</h4>
+         <ul>
+            <li>普通のリスト1</li>
+            <li>普通のリスト2</li>
+            <li>普通のリスト3</li>
+         </ul>
+         <h4>番号付きリスト</h4>
+         <ol>
+            <li>番号付きリスト1</li>
+            <li>番号付きリスト2</li>
+            <li>番号付きリスト3<br />li要素の中はブロックレベルのタグを使用することが出来ます。例えば、&lt;p&gt;タグも記述することが出来ます。<br /></li>
+         </ol>
+         <h4>定義リスト</h4>
+         <dl>
+            <dt>定義リスト1</dt>
+            <dd>定義した用語の説明</dd>
+            <dt>定義リスト2</dt>
+            <dd>定義した用語の説明</dd>
+            <dt>定義リスト3</dt>
+            <dd>定義した用語の説明<br />dd要素の中はブロックレベルのタグを使用することが出来ます。例えば、&lt;p&gt;タグも記述することが出来ます。しかし、dt要素にはインライン要素しか記述することができません。</dd>
+         </dl>
+      </div><!-- /#main -->
+      <div id="sub">
+         <div class="section">
+            <h2>Category</h2>
+            <ul>
+               <li><a href="index.html">MENU1</a></li>
+               <li><a href="index.html">MENU2</a></li>
+               <li><a href="index.html">MENU3</a></li>
+               <li><a href="index.html">MENU4</a></li>
+               <li><a href="index.html">MENU5</a></li>
+               <li><a href="index.html">MENU6</a></li>
+            </ul>
+         </div><!-- /.section -->
+         <div class="section">
+            <h2>Category</h2>
+            <ul>
+               <li><a href="index.html">MENU1</a></li>
+               <li><a href="index.html">MENU2</a></li>
+               <li><a href="index.html">MENU3</a></li>
+               <li><a href="index.html">MENU4</a></li>
+               <li><a href="index.html">MENU5</a></li>
+               <li><a href="index.html">MENU6</a></li>
+            </ul>
+         </div><!-- /.section -->
+      </div><!-- /#sub -->
+   </div><!-- /#contents -->
+   <div id="pageTop">
+      <a href="#">ページのトップへ戻る</a>
+   </div><!-- /#pageTop -->
+   <div id="footer">
+      <div class="copyright">Copyright &copy; 2011 YOUR SITE NAME All Rights Reserved.</div>
+   </div><!-- /footer -->
+</div><!-- /top -->
 </body>
 </html>
