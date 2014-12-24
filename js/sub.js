@@ -1,17 +1,17 @@
  myJpeg = new Array(
  // ‰æ‘œ‚ÌURL, ƒ^ƒCƒgƒ‹, ‰æ‘œ‚Ì•, ‰æ‘œ‚Ì‚‚³
- "images/install/1.jpg", "InstallImage1", 1000, 800,
- "images/install/2.jpg", "InstallImage2", 1000, 800,
- "images/install/3.jpg", "InstallImage3",  500, 400,
- "images/install/4.jpg", "InstallImage4",  500, 400,
- "images/install/5.jpg", "InstallImage5",  600, 400,
- "images/install/6.jpg", "InstallImage6",  500, 400,
- "images/setting/1.jpg", "SettingImage1", 1000, 800,
- "images/setting/2.jpg", "SettingImage2",  600, 400,
- "images/setting/3.jpg", "SettingImage3",  600, 400,
- "images/setting/4.jpg", "SettingImage4",  600, 400,
- "images/setting/5.jpg", "SettingImage5",  600, 400,
- "images/setting/6.jpg", "SettingImage6",  600, 400
+ "images/install/1.JPG", "InstallImage1", 1000, 800,
+ "images/install/2.JPG", "InstallImage2", 1000, 800,
+ "images/install/3.JPG", "InstallImage3",  500, 400,
+ "images/install/4.JPG", "InstallImage4",  500, 400,
+ "images/install/5.JPG", "InstallImage5",  600, 400,
+ "images/install/6.JPG", "InstallImage6",  500, 400,
+ "images/setting/1.JPG", "SettingImage1", 1000, 800,
+ "images/setting/2.JPG", "SettingImage2",  600, 400,
+ "images/setting/3.JPG", "SettingImage3",  600, 400,
+ "images/setting/4.JPG", "SettingImage4",  600, 400,
+ "images/setting/5.JPG", "SettingImage5",  600, 400,
+ "images/setting/6.JPG", "SettingImage6",  600, 400
  );
 
  function myGo(myTblNo){
