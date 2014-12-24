@@ -11,7 +11,9 @@
  "images/setting/3.JPG", "SettingImage3",  600, 400,
  "images/setting/4.JPG", "SettingImage4",  600, 400,
  "images/setting/5.JPG", "SettingImage5",  600, 400,
- "images/setting/6.JPG", "SettingImage6",  600, 400
+ "images/setting/6.JPG", "SettingImage6",  600, 400,
+ "images/setting/7.JPG", "SettingImage7",  800, 500,
+ "images/setting/8.JPG", "SettingImage8",  800, 500
  );
 
  function myGo(myTblNo){
