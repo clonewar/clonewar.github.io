@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+<title>JAVA勉強会用</title>
+</head>
+<body>
+<div id="top">
+   <div id="header">
+      <h1><a href="index.html">JAVA勉強会用</a></h1>
+   </div><!-- /#header -->
+   <div id="menu">
+      <ul>
+         <li><a href="install.html" class="active">インストール編</a></li>
+         <li><a href="basicKnowledge.html">基礎知識編</a></li>
+         <li><a href="wait.html">準備中</a></li>
+         <li><a href="wait.html">準備中</a></li>
+         <li><a href="wait.html">準備中</a></li>
+      </ul>
+   </div><!-- /#menu -->
+   <div id="contents">
+      <h1>Javaの基礎知識</h1>
+      <div id="main">
+         <h2>Java言語の特徴</h2>
+	<p>
+	JavaはSun Microsystems社が開発したプログラミング言語であり、<br />
+	その開発環境の総称です。<br /><br />
+	1995年に発表された比較的新しいプログラミング言語ですが、<br />
+	インターネットの普及とJavaの持つ優位性から開発者が多い言語でもあります。<br /><br />
+	Java言語の特徴について、軽く触れたいと思います。<br />
+	</p>
+        <h3>オブジェクト指向言語</h3>
+        <p>
+	「オブジェクト指向」という概念はJavaだけでなく、<br />
+	UMLやデザインパターンを知る上でも重要となります。<br /><br />
+	 オブジェクトとは「もの」であり、「オブジェクト指向」とはソフトウェアの中で<br />
+	 現実世界の物事を形として「もの」で表現しようという概念です。<br /><br />
+	 例えば「自動車」をオブジェクトとして表現するとこうなります。<br />
+	 「自動車」が持つ「速く走ることができる」という機能や「車輪が4つ付いている」などの<br />
+	 属性を定義することで「自動車」を表現できます。<br /><br />
+	オブジェクト指向で記載するメリットは<br />
+	　・人間にとって解りやすいプログラムが書ける。<br />
+	　・プログラムの再利用ができる。<br />
+	　・ソフトウェア開発の効率が上がる。<br /><br />
+	ここでは「オブジェクト指向」を簡単に、やや強引に説明しましたが詳しく知りたい方は<br />
+	下記の本を読んでみて下さい。<br />
+	<CITE>参考文献：図解Java流オブジェクト指向入門</CITE>
+        </p>
+        <h3>Write Once, Run Anywhere(一度記述すれば、どこでも動く)</h3>
+        <p>
+	Javaは「Write Once, Run Anywhere」という構想で設計されています。<br />
+	具体的には次のような特徴があります。
+	<ul>
+	  <li>一度作成すれば、どのプラットフォーム上でも動作する。</li>
+	     <font color =blue>「プラットフォーム」とはOSやハードウェアを組み合わせたコンピュータ環境</font>
+	  <li>一度作成すれば、オブジェクト指向によってプログラムを再利用できる。</li>
+	  <li>一度作成すれば、ネットワーク上のどのマシンからでも利用できる。</li>
+	</ul>
+        </p>
+
+        <h2>Javaの様々なプログラム</h2>
+	<p>
+	Javaのプログラムは「CUI」「GUI」「ネットワーク」などの<br />
+	様々な環境を対象として作成できます。<br /><br />
+	作成したプログラムを、どの環境でも同じように動作させるため<br />
+	Javaでは「Java仮想マシン」(<B>Java V</B>irtual <B>M</B>achine)と呼ばれる仕組みを利用して<br />
+	この機能を実現しています。<br /><br />
+	「Java仮想マシン」はプログラム実行時に、<br />
+	それぞれの環境で稼働するコードに変換しています。<br /><br />
+	このような機能を完備している為、<br />
+	次に示すような環境で稼働するプログラムを、容易に作成できます。
+	</p>
+
+        <h3>CUI(Character User Interface)アプリケーション</h3>
+	<p>
+	Windows OSの「コマンドプロンプト」のような、<br />
+	文字ベースのプログラムの実行環境をCUIと呼ぶ。<br />
+	</p>
+
+        <h3>GUI(Graphical User Interface)アプリケーション</h3>
+	<p>
+	Windows OSの「デスクトップ上」のような、ウィンドウやアイコンなどを使った、<br />
+	プログラムのグラフィカルな実行環境をGUIと呼ぶ。
+	</p>
+
+        <h3>Javaアプレット</h3>
+	<p>
+	アプレット(applet)は小さなアプリケーションという意味で、<br />
+	Webブラウザ上で稼働するプログラムです。<br /><br />
+	HTMLファイル上で指定すると、<br />
+	<font color = red>サーバからダウンロードされて、Webブラウザで実行される</font>。<br />
+	※アプレットは基本的に、ファイルの読み書きや実行が制限されています。
+	</p>
+
+        <h3>Javaサーブレット</h3>
+	<p>
+	サーブレット(servlet)は、Webサーバ上で稼働するプログラムです。<br />
+	サーブレットの処理結果は、Webページとしてクライアントマシンに返されます。<br /><br />
+	CGIなどのプログラムとは異なり、一度呼び出されるとそのままメモリに常駐するため<br />
+	高速な処理を行うことができます。
+	</p>
+
+        <h3>JSP(Java Server Pages)</h3>
+	<p>
+	JSPは断片的なJavaコードが埋め込まれたWebページです。<br />
+	サーバ上でサーブレットに変換され、<br />
+	処理結果がWebページとしてクライアントマシンに返されます。<br /><br />
+	Javaで記述されているため、Active Server Pageなどと異なり、<br />
+	Webサーバのシステムに依存せず動作する事ができる。
+	</p>
+
+        <h3>JavaBeans</h3>
+	<p>
+	Javaで作成したプログラムを、<br />
+	統合開発環境などで、視覚的に利用できる部品(BeanまたはBeans)<br />
+	として利用するための仕組み。
+	</p>
+
+      </div>
+　　　<!-- /#main -->
+      <div id="sub">
+         <div class="section">
+            <h2>Category</h2>
+            <ul>
+	       <li><a href="install.html">インストール編</a></li>
+               <li><a href="basicKnowledge.html">基礎知識編</a></li>
+               <li><a href="wait.html">準備中</a></li>
+               <li><a href="wait.html">準備中</a></li>
+               <li><a href="wait.html">準備中</a></li>
+               <li><a href="wait.html">準備中</a></li>
+            </ul>
+         </div>
+	 <!-- /.section -->
+<!--
+         <div class="section">
+            <h2>Category</h2>
+            <ul>
+               <li><a href="index.html">MENU1</a></li>
+               <li><a href="index.html">MENU2</a></li>
+               <li><a href="index.html">MENU3</a></li>
+               <li><a href="index.html">MENU4</a></li>
+               <li><a href="index.html">MENU5</a></li>
+               <li><a href="index.html">MENU6</a></li>
+            </ul>
+         </div>
+-->
+	 <!-- /.section -->
+      </div><!-- /#sub -->
+   </div><!-- /#contents -->
+   <div id="pageTop">
+      <a href="#">ページのトップへ戻る</a>
+   </div><!-- /#pageTop -->
+   <div id="footer">
+      <div class="copyright">Copyright &copy; 2014 CloneWarProject  All Rights Reserved.</div>
+   </div><!-- /footer -->
+</div><!-- /top -->
+</body>
+</html>
