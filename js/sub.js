@@ -1,5 +1,5 @@
  myJpeg = new Array(
- // ‰æ‘œ‚ÌURL, ƒ^ƒCƒgƒ‹, ‰æ‘œ‚Ì•, ‰æ‘œ‚Ì‚‚³
+ // ç”»åƒã®URL, ã‚¿ã‚¤ãƒˆãƒ«, ç”»åƒã®å¹…, ç”»åƒã®é«˜ã•
  "images/install/1.JPG", "InstallImage1", 1000, 800,
  "images/install/2.JPG", "InstallImage2", 1000, 800,
  "images/install/3.JPG", "InstallImage3",  500, 400,
@@ -17,12 +17,12 @@
  );
 
  function myGo(myTblNo){
-      myAry = myTblNo * 4; // ”z—ñ‚Ìæ“ª
-      myXX=myJpeg[myAry+2]; // ƒEƒBƒ“ƒhƒE‰¡•
-      myYY=myJpeg[myAry+3]; // ƒEƒBƒ“ƒhƒEc•
-      myWinName = "Win" + myTblNo; // ƒEƒBƒ“ƒhƒE–¼
-      myWinSize = "resizable=yes,width=" + myXX + ",height=" + myYY; // ƒEƒBƒ“ƒhƒEƒIƒvƒVƒ‡ƒ“
-      myWin = window.open("" , myWinName , myWinSize); // ƒEƒBƒ“ƒhƒE‚ğŠJ‚­
+      myAry = myTblNo * 4; // é…åˆ—ã®å…ˆé ­
+      myXX=myJpeg[myAry+2]; // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦æ¨ªå¹…
+      myYY=myJpeg[myAry+3]; // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ç¸¦å¹…
+      myWinName = "Win" + myTblNo; // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦å
+      myWinSize = "resizable=yes,width=" + myXX + ",height=" + myYY; // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚ªãƒ—ã‚·ãƒ§ãƒ³
+      myWin = window.open("" , myWinName , myWinSize); // ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’é–‹ã
       myWin.document.open();
       myWin.document.write( "<html>" );
       myWin.document.write( "<head>" );

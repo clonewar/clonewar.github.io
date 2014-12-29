@@ -29,46 +29,79 @@
       </ul>
    </div><!-- /#menu -->
    <div id="contents">
-      <h1>Javaの基礎知識(1)</h1>
+      <h1>Javaの基礎知識(3)</h1>
       <div id="main">
-         <h2>Java言語の特徴</h2>
-	<p>
-	JavaはSun Microsystems社が開発したプログラミング言語であり、<br />
-	その開発環境の総称です。<br /><br />
-	1995年に発表された比較的新しいプログラミング言語ですが、<br />
-	インターネットの普及とJavaの持つ優位性から開発者が多い言語でもあります。<br /><br />
-	Java言語の特徴について、軽く触れたいと思います。<br />
-	</p>
-        <h3>オブジェクト指向言語</h3>
+        <h2>開発環境について</h2>
+
+        <h3>Java Development Kit(JDK)</h3>
         <p>
-	「オブジェクト指向」という概念はJavaだけでなく、<br />
-	UMLやデザインパターンを知る上でも重要となります。<br /><br />
-	 オブジェクトとは「もの」であり、「オブジェクト指向」とはソフトウェアの中で<br />
-	 現実世界の物事を形として「もの」で表現しようという概念です。<br /><br />
-	 例えば「自動車」をオブジェクトとして表現するとこうなります。<br />
-	 「自動車」が持つ「速く走ることができる」という機能や「車輪が4つ付いている」などの<br />
-	 属性を定義することで「自動車」を表現できます。<br /><br />
-	オブジェクト指向で記載するメリットは<br />
-	　・人間にとって解りやすいプログラムが書ける。<br />
-	　・プログラムの再利用ができる。<br />
-	　・ソフトウェア開発の効率が上がる。<br /><br />
-	ここでは「オブジェクト指向」を簡単に、やや強引に説明しましたが詳しく知りたい方は<br />
-	下記の本を読んでみて下さい。<br />
-	<CITE>参考文献：図解Java流オブジェクト指向入門</CITE>
+	Javaでプログラムを作成する際に必要な開発キット<br /><br />
+	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java_Development_Kit</CITE>
         </p>
-        <h3>Write Once, Run Anywhere(一度記述すれば、どこでも動く)</h3>
+
+        <h3>Java Runtime Environment(JRE)</h3>
         <p>
-	Javaは「Write Once, Run Anywhere」という構想で設計されています。<br />
-	具体的には次のような特徴があります。
-	<ul>
-	  <li>一度作成すれば、どのプラットフォーム上でも動作する。</li>
-	     <font color =blue>「プラットフォーム」とはOSやハードウェアを組み合わせたコンピュータ環境</font>
-	  <li>一度作成すれば、オブジェクト指向によってプログラムを再利用できる。</li>
-	  <li>一度作成すれば、ネットワーク上のどのマシンからでも利用できる。</li>
-	</ul>
+	Javaで作成されたプログラムを実行する際に必要な実行環境<br />
+	　・PrivateJRE(非公開JRE)：JDKに含まれているJRE<br />
+	　・Public JRE(  公開JRE)：サイト等から単体でインストールしたJRE<br /><br />
+	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java_Runtime_Environment</CITE>
         </p>
+
+        <h3>Java Platform, Standard Edition (JavaSE)</h3>
+        <p>
+	標準的な機能が纏められたAPIの集合体<br />
+	※バージョン5.0まではJava 2 Platform,Standard Edition(J2SE)と呼ばれていた <br /><br />
+	<table border=1>
+		<tr bgcolor = skyblue>
+			<th>API</th>
+		</tr>
+		<tr>
+			<td>基本言語ライブラリー,通信ライブラリー,GUI関連ライブラリー<br />JDBC,JNDI,RMI,Java IDL(CORBA),JMX</td>
+		</tr>
+	</table>
+	<br />
+	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java_Platform,_Standard_Edition</CITE>
+        </p>
+
+        <h3>Java Platform, Enterprise Edition (JavaEE)</h3>
+        <p>
+	Javaの企業用機能セット<br />
+	JavaSEの拡張機能の形で提供される<br />
+	(JavaSE + JavaEE用ライブラリ + 標準JavaEEサーバ + 各種ドキュメント)<br />
+	※バージョン5.0まではJava 2 Platform,Enterprise Edition(J2EE)と呼ばれていた <br /><br />
+	<table border=1>
+		<tr bgcolor = skyblue>
+			<th>API</th>
+		</tr>
+		<tr>
+			<td>サーブレット,JSP,JSF,EJB,JPA,JMS,JTA,JCA<br />Webサービス関連ライブラリー,Java Mail,DIコンテナ関連</td>
+		</tr>
+	</table>
+	<br />
+	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition</CITE>
+        </p>
+
+        <h3>Application Programming Interface(API)</h3>
+        <p>
+	Javaでは関数群のことを指します<br />
+	クラスやインタフェースの形で提供されています<br />
+	APIは数多く存在する為、使い方は公式サイトで調べます<br /><br />
+	<CITE>参考文献：http://docs.oracle.com/javase/jp/8/api/</CITE>
+        </p>
+
+        <h3>Java Virtual Machine(JavaVM,JVM)</h3>
+        <p>
+	Java言語で作られたプログラムを実行するためのソフトウェアです<br />
+	JREに含まれています<br />
+	実行させるにはソースコードをコンパイルしてクラスファイルを作成する必要がある<br /><br />
+	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java%E4%BB%AE%E6%83%B3%E3%83%9E%E3%82%B7%E3%83%B3</CITE>
+        </p>
+
 	<br /><br />
-	<center><a href="basicKnowledge2.html">次へ</a></center>
+	<center>
+		<a href="basicKnowledge.html">『Javaの基礎知識(1)』に戻る</a>　　
+		<a href="basicKnowledge2.html">『Javaの基礎知識(2)』に戻る</a>
+	</center>
       </div>
 　　　<!-- /#main -->
       <div id="sub">

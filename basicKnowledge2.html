@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+<script type="text/javascript" src="js/commonString.js"></script>
+<title>JAVA勉強会用</title>
+</head>
+<body>
+<div id="top">
+   <div id="header">
+      <h1><a href="index.html"><SCRIPT>outputTitle(0,0);</SCRIPT></a></h1>
+   </div><!-- /#header -->
+   <div id="menu">
+      <ul>
+         <li><a href="install.html" class="active"><SCRIPT>outputTitle(1,0);</SCRIPT></a></li>
+         <li><a href="basicKnowledge.html"><SCRIPT>outputTitle(1,1);</SCRIPT></a></li>
+         <li><a href="wait.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
+         <li><a href="wait.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
+         <li><a href="wait.html"><SCRIPT>outputTitle(1,4);</SCRIPT></a></li>
+      </ul>
+   </div><!-- /#menu -->
+   <div id="contents">
+      <h1>Javaの基礎知識(2)</h1>
+      <div id="main">
+        <h2>Javaの様々なプログラム</h2>
+	<p>
+	Javaのプログラムは「CUI」「GUI」「ネットワーク」などの<br />
+	様々な環境を対象として作成できます。<br /><br />
+	作成したプログラムを、どの環境でも同じように動作させるため<br />
+	Javaでは「Java仮想マシン」(<B>Java V</B>irtual <B>M</B>achine)と呼ばれる仕組みを利用して<br />
+	この機能を実現しています。<br /><br />
+	「Java仮想マシン」はプログラム実行時に、<br />
+	それぞれの環境で稼働するコードに変換しています。<br /><br />
+	このような機能を完備している為、<br />
+	次に示すような環境で稼働するプログラムを、容易に作成できます。
+	</p>
+
+        <h3>CUI(Character User Interface)アプリケーション</h3>
+	<p>
+	Windows OSの「コマンドプロンプト」のような、<br />
+	文字ベースのプログラムの実行環境をCUIと呼ぶ。<br />
+	</p>
+
+        <h3>GUI(Graphical User Interface)アプリケーション</h3>
+	<p>
+	Windows OSの「デスクトップ上」のような、ウィンドウやアイコンなどを使った、<br />
+	プログラムのグラフィカルな実行環境をGUIと呼ぶ。
+	</p>
+
+        <h3>Javaアプレット</h3>
+	<p>
+	アプレット(applet)は小さなアプリケーションという意味で、<br />
+	Webブラウザ上で稼働するプログラムです。<br /><br />
+	HTMLファイル上で指定すると、<br />
+	<font color = red>サーバからダウンロードされて、Webブラウザで実行される</font>。<br />
+	※アプレットは基本的に、ファイルの読み書きや実行が制限されています。<br />
+	<CENTER><img src="images/setting/9.JPG" border="0" width="60%" height="60%"></CENTER>
+	</p>
+
+        <h3>Javaサーブレット</h3>
+	<p>
+	サーブレット(servlet)は、<font color = red>Webサーバ上で稼働する</font>プログラムです。<br />
+	サーブレットの処理結果は、Webページとしてクライアントマシンに返されます。<br /><br />
+	CGIなどのプログラムとは異なり、一度呼び出されるとそのままメモリに常駐するため<br />
+	高速な処理を行うことができます。<br />
+	<CENTER><img src="images/setting/10.JPG" border="0" width="60%" height="60%"></CENTER>
+	</p>
+
+        <h3>JSP(Java Server Pages)</h3>
+	<p>
+	JSPは断片的なJavaコードが埋め込まれたWebページです。<br />
+	サーバ上でサーブレットに変換され、<br />
+	処理結果がWebページとしてクライアントマシンに返されます。<br /><br />
+	Javaで記述されているため、Active Server Pageなどと異なり、<br />
+	Webサーバのシステムに依存せず動作する事ができる。<br />
+	<CENTER><img src="images/setting/11.JPG" border="0" width="60%" height="60%"></CENTER>
+	</p>
+
+        <h3>JavaBeans</h3>
+	<p>
+	Javaで作成したプログラムを、<br />
+	統合開発環境などで、視覚的に利用できる部品(BeanまたはBeans)<br />
+	として利用するための仕組み。
+	</p>
+	<br /><br />
+	<center>
+		<a href="basicKnowledge.html">戻る</a>　　
+		<a href="basicKnowledge3.html">次へ</a>
+	</center>
+      </div>
+　　　<!-- /#main -->
+      <div id="sub">
+         <div class="section">
+            <h2>Category</h2>
+            <ul>
+	       <li><a href="install.html"><SCRIPT>outputTitle(1,0);</SCRIPT></a></li>
+               <li><a href="basicKnowledge.html"><SCRIPT>outputTitle(1,1);</SCRIPT></a></li>
+               <li><a href="wait.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
+               <li><a href="wait.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
+               <li><a href="wait.html"><SCRIPT>outputTitle(1,4);</SCRIPT></a></li>
+            </ul>
+         </div>
+	 <!-- /.section -->
+<!--
+         <div class="section">
+            <h2>Category</h2>
+            <ul>
+               <li><a href="index.html">MENU1</a></li>
+               <li><a href="index.html">MENU2</a></li>
+               <li><a href="index.html">MENU3</a></li>
+               <li><a href="index.html">MENU4</a></li>
+               <li><a href="index.html">MENU5</a></li>
+               <li><a href="index.html">MENU6</a></li>
+            </ul>
+         </div>
+-->
+	 <!-- /.section -->
+      </div><!-- /#sub -->
+   </div><!-- /#contents -->
+   <div id="pageTop">
+      <a href="#">ページのトップへ戻る</a>
+   </div><!-- /#pageTop -->
+   <div id="footer">
+      <div class="copyright">Copyright &copy; 2014 CloneWarProject  All Rights Reserved.</div>
+   </div><!-- /footer -->
+</div><!-- /top -->
+</body>
+</html>
