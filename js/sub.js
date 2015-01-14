@@ -13,7 +13,11 @@
  "images/setting/5.JPG", "SettingImage5",  600, 400,
  "images/setting/6.JPG", "SettingImage6",  600, 400,
  "images/setting/7.JPG", "SettingImage7",  800, 500,
- "images/setting/8.JPG", "SettingImage8",  800, 500
+ "images/setting/8.JPG", "SettingImage8",  800, 500,
+ "images/execomp/4.JPG", "exeAndcomp4"  ,  800, 500,
+ "images/execomp/5.JPG", "exeAndcomp5"  ,  800, 500,
+ "images/execomp/6.JPG", "exeAndcomp6"  ,  800, 500,
+ "images/execomp/7.JPG", "exeAndcomp7"  ,  800, 500
  );
 
  function myGo(myTblNo){

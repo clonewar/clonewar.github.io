@@ -29,9 +29,50 @@
       </ul>
    </div><!-- /#menu -->
    <div id="contents">
-      <h1>準備中</h1>
+      <h1>Javaプログラムのコンパイルと実行(2)</h1>
       <div id="main">
-	<p>準備中です！</p>
+         <h2>Windows7でコンパイルと実行</h2>
+         <h3>ソースファイルの準備</h3>
+	<p>
+	メモ帳(デスクトップ上で右クリック→新規作成)やテキストエディタを開き、<br />
+	下記コードを入力後、ファイル名を「Test.java」にして保存する。<br /><br />
+	public class Test{<br />
+	　　public static void main(String[] args){<br />
+	　　　　System.out.print("hello");<br />
+	　　}<br />
+	}<br />
+	</p>
+        <h3>ソースファイルのコンパイル</h3>
+        <p>
+	1.今後の作業を楽にする為、ソースファイルを移します。<br />
+	　※ソースファイルの移動先は任意ですが、<br >
+	　　　日本語名称のフォルダはエラーを誘発する可能性がある為、避けた方が良いです。<br />
+	　※今後はDドライブの直下に「java」フォルダを作成した事を想定して説明します。<br />
+	2.コマンドプロンプトを開き『cd /d d:&yen;java 』と入力して『リターン』キーを押す。<br />
+	3.下図の通り『d:&yen;java &gt; 』と表示されている事を確認する。<br />
+        　<a href="JavaScript:myGo(14)"><img src="images//execomp/4.JPG" border="0" width="100" height="100"></a> <br />
+	4.『javac Test.java 』と入力して『リターン』キーを押す。<br />
+	5.下図の通り『d:&yen;java &gt; 』と表示されている事を確認する。<br />
+        　<a href="JavaScript:myGo(15)"><img src="images//execomp/5.JPG" border="0" width="100" height="100"></a> <br />
+	<font color = red>※エラーが存在する場合は下図の通り表示されます。<br />
+	　エラーメッセージを手掛かりにソースファイルを修正します。<br />
+	</font>
+        　<a href="JavaScript:myGo(16)"><img src="images//execomp/6.JPG" border="0" width="100" height="100"></a> <br />
+	<font color = blue>今回は『System.out.print("hello")』と記述すべきところを<br />
+		『System.out.p("hello")』と記述している為、構文解析エラーとなっています。<br />
+	</font>
+
+        </p>
+        <h3>ソースファイルの実行</h3>
+	<p>
+	1.『java Test 』と入力して『リターン』キーを押す。<br />
+	<font color ="blue">　　※実行はクラスファイルでは無くクラスそのものを指定する為、拡張子はつけません</font><br />
+	2.下図の通り『hello 』と表示されている事を確認する。<br />
+        　<a href="JavaScript:myGo(17)"><img src="images//execomp/7.JPG" border="0" width="100" height="100"></a> <br />
+	</p>
+
+	<br /><br />
+	<center><a href="executionAndCompilation.html">戻る</a></center>
       </div>
 　　　<!-- /#main -->
       <div id="sub">

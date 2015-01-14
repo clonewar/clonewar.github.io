@@ -23,52 +23,82 @@
       <ul>
          <li><a href="install.html" class="active"><SCRIPT>outputTitle(1,0);</SCRIPT></a></li>
          <li><a href="basicKnowledge.html"><SCRIPT>outputTitle(1,1);</SCRIPT></a></li>
-         <li><a href="wait.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
+         <li><a href="executionAndCompilation.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
          <li><a href="wait.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
          <li><a href="wait.html"><SCRIPT>outputTitle(1,4);</SCRIPT></a></li>
       </ul>
    </div><!-- /#menu -->
    <div id="contents">
-      <h1>Javaプログラムのコンパイルと実行</h1>
+      <h1>Javaプログラムのコンパイルと実行(1)</h1>
       <div id="main">
-         <h2>プログラム実行までの流れ</h2>
+         <h3>コンパイラの基本構成</h3>
 	<p>
-	JavaはSun Microsystems社が開発したプログラミング言語であり、<br />
-	その開発環境の総称です。<br /><br />
-	1995年に発表された比較的新しいプログラミング言語ですが、<br />
-	インターネットの普及とJavaの持つ優位性から開発者が多い言語でもあります。<br /><br />
-	Java言語の特徴について、軽く触れたいと思います。<br />
+	「コンパイラ」は入力としてソースコードを受け取り、内部で変換処理を行い<br />
+	オブジェクトコードを出力します。
+	<CENTER><img src="images/execomp/1.JPG" border="0" width="100%" height="100%"></CENTER>
+	<B>ソースコード　　　</B>・・・人間が理解しやすいプログラミング言語で記述されたもの<br />
+	<B>オブジェクトコード</B>・・・コンピュータが理解しやすい2進数の羅列である<br />
+	　　　　　　　　　　　　　機械語で記述されたもの<br />
+	<br />Javaの場合<br />
+	　「ソースコード」はプログラミング言語のJava文法で記述されたコード(.java)が相当<br />
+	　「オブジェクトコード」はJavaVM用の機械語で記述されたコード(.class)が相当<br />
+	
 	</p>
-        <h3>オブジェクト指向言語</h3>
+        <h3>JavaのコンパイラとVM</h3>
         <p>
-	「オブジェクト指向」という概念はJavaだけでなく、<br />
-	UMLやデザインパターンを知る上でも重要となります。<br /><br />
-	 オブジェクトとは「もの」であり、「オブジェクト指向」とはソフトウェアの中で<br />
-	 現実世界の物事を形として「もの」で表現しようという概念です。<br /><br />
-	 例えば「自動車」をオブジェクトとして表現するとこうなります。<br />
-	 「自動車」が持つ「速く走ることができる」という機能や「車輪が4つ付いている」などの<br />
-	 属性を定義することで「自動車」を表現できます。<br /><br />
-	オブジェクト指向で記載するメリットは<br />
-	　・人間にとって解りやすいプログラムが書ける。<br />
-	　・プログラムの再利用ができる。<br />
-	　・ソフトウェア開発の効率が上がる。<br /><br />
-	ここでは「オブジェクト指向」を簡単に、やや強引に説明しましたが詳しく知りたい方は<br />
-	下記の本を読んでみて下さい。<br />
-	<CITE>参考文献：図解Java流オブジェクト指向入門</CITE>
+	基本的にOSから見るとJavaVMはJavaVM用の機械語を逐次実行するインタプリタ<br />
+	となるため、Javaのプログラムはインタプリタ実行されるということになります。<br />
+	<CENTER><img src="images/execomp/2.JPG" border="0" width="100%" height="100%"></CENTER>
         </p>
-        <h3>Write Once, Run Anywhere(一度記述すれば、どこでも動く)</h3>
+
+        <h3>コンパイラの内部処理について</h3>
         <p>
-	Javaは「Write Once, Run Anywhere」という構想で設計されています。<br />
-	具体的には次のような特徴があります。
-	<ul>
-	  <li>一度作成すれば、どのプラットフォーム上でも動作する。</li>
-	     <font color =blue>「プラットフォーム」とはOSやハードウェアを組み合わせたコンピュータ環境</font>
-	  <li>一度作成すれば、オブジェクト指向によってプログラムを再利用できる。</li>
-	  <li>一度作成すれば、ネットワーク上のどのマシンからでも利用できる。</li>
-	</ul>
+	コンパイラでは、下記フェーズの順に処理を進めます。<br />
+	<ol>
+		<li>字句解析</li>
+		<li>構文解析</li>
+		<li>意味解析</li>
+		<li>コード最適化</li>
+		<li>コード生成</li>
+	</ol>
+	このとき、<br />
+	途中段階の各フェイズでは中間コードを使ってプログラムを表現することもあります。<br />
+	また、プログラム上の変数や関数の名前などを保存する名前表なども必要になります。<br />
+	次の図では、中間コード、名前表などを<B>中間情報</B>としています。<br />
+	<CENTER><img src="images/execomp/3.JPG" border="0" width="100%" height="100%"></CENTER>
         </p>
+
+        <h2>1.字句解析</h2>
+	「public class A { int a; }」といったJavaのソースコードに含まれる文字列を<br />
+	「public」「class」「A」のように、字句という単位に分割します。<br />
+        <p>
+        </p>
+        <h2>2.構文解析</h2>
+        <p>
+	文法的に正しいかをチェックします。<br /><br />
+	例えば、「public clas A { int a; }」とJavaのソースコードがなっていると、<br />
+	「clas」の位置には「class」や「interface」が来るはずなので、<br />
+	構文的に間違っている、ということでエラーにします。
+        </p>
+        <h2>3.意味解析</h2>
+        <p>
+	実行できるかをチェックします。<br /><br />
+	例えば、「a = b;」は構文的には合っていますが、<br />
+	a が int型の変数で b がboolean型の変数の場合は代入ができませんから、<br />
+	意味的に間違っている、ということでエラーにします。
+        </p>
+        <h2>4.コード最適化</h2>
+        <p>
+	実行時により速く実行できるように無駄をなくしたり、<br />
+	オブジェクトコードのサイズをできるだけ小さくするように無駄をなくす処理をします。
+        </p>
+        <h2>5.コード生成</h2>
+        <p>
+	その名のとおりオブジェクトコードを生成します。
+        </p>
+
 	<br /><br />
-	<center><a href="basicKnowledge2.html">次へ</a></center>
+	<center><a href="executionAndCompilation2.html">次へ</a></center>
       </div>
 　　　<!-- /#main -->
       <div id="sub">
@@ -77,7 +107,7 @@
             <ul>
 	       <li><a href="install.html"><SCRIPT>outputTitle(1,0);</SCRIPT></a></li>
                <li><a href="basicKnowledge.html"><SCRIPT>outputTitle(1,1);</SCRIPT></a></li>
-               <li><a href="wait.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
+               <li><a href="executionAndCompilation.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
                <li><a href="wait.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
                <li><a href="wait.html"><SCRIPT>outputTitle(1,4);</SCRIPT></a></li>
             </ul>
