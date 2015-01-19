@@ -29,79 +29,52 @@
       </ul>
    </div><!-- /#menu -->
    <div id="contents">
-      <h1>Javaの基礎知識(3)</h1>
+      <h1>オブジェクトの基本概念(1)</h1>
       <div id="main">
-        <h2>開発環境について</h2>
+         <h2>オブジェクトとは</h2>
+	<p>
+	人間が五感で感じる実世界の物事をありのままに表現したもの。<br />
+	<CENTER><img src="images/obj/1.JPG" border="0" width="80%" height="80%"></CENTER>
+	</p>
 
-        <h3>Java Development Kit(JDK)</h3>
-        <p>
-	Javaでプログラムを作成する際に必要な開発キット<br /><br />
-	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java_Development_Kit</CITE>
-        </p>
+         <h3>オブジェクトの認識</h3>
+         <h4>オブジェクトの資格を持つもの</h4>
+	<p>
+	最初は名前を持っていないオブジェクトも、いずれは『名前』を持ちます。<br />
+	名前を持つことのできるモノは、下図のように『名詞』に分類されます。<br />
+	したがって『名詞』の性質を持つすべての事物は、『オブジェクト』としての資格を持ちます。<br />
+	<CENTER><img src="images/obj/2.JPG" border="0" width="50%" height="50%"></CENTER>
+	</p>
 
-        <h3>Java Runtime Environment(JRE)</h3>
-        <p>
-	Javaで作成されたプログラムを実行する際に必要な実行環境<br />
-	　・PrivateJRE(非公開JRE)：JDKに含まれているJRE<br />
-	　・Public JRE(  公開JRE)：サイト等から単体でインストールしたJRE<br /><br />
-	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java_Runtime_Environment</CITE>
-        </p>
+         <h4>オブジェクトの資格を持たないもの</h4>
+	<p>
+	下図のように「～中に」(英語で言う前置詞)、「うふふ」(擬声語)、「美しい」(形容詞)<br />
+	「勉強する」(動詞)、「素直に」(副詞)などは『オブジェクト』になる資格を持ちません。<br />
+	『名詞』として分類されるモノだけが、『オブジェクト』の資格を持ちます。<br />
+	<CENTER><img src="images/obj/3.JPG" border="0" width="50%" height="50%"></CENTER>
+	</p>
 
-        <h3>Java Platform, Standard Edition (JavaSE)</h3>
-        <p>
-	標準的な機能が纏められたAPIの集合体<br />
-	※バージョン5.0まではJava 2 Platform,Standard Edition(J2SE)と呼ばれていた <br /><br />
-	<table border=1>
-		<tr bgcolor = skyblue>
-			<th>API</th>
-		</tr>
-		<tr>
-			<td>基本言語ライブラリー,通信ライブラリー,GUI関連ライブラリー<br />JDBC,JNDI,RMI,Java IDL(CORBA),JMX</td>
-		</tr>
-	</table>
-	<br />
-	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java_Platform,_Standard_Edition</CITE>
-        </p>
-
-        <h3>Java Platform, Enterprise Edition (JavaEE)</h3>
-        <p>
-	Javaの企業用機能セット<br />
-	JavaSEの拡張機能の形で提供される<br />
-	(JavaSE + JavaEE用ライブラリ + 標準JavaEEサーバ + 各種ドキュメント)<br />
-	※バージョン5.0まではJava 2 Platform,Enterprise Edition(J2EE)と呼ばれていた <br /><br />
-	<table border=1>
-		<tr bgcolor = skyblue>
-			<th>API</th>
-		</tr>
-		<tr>
-			<td>サーブレット,JSP,JSF,EJB,JPA,JMS,JTA,JCA<br />Webサービス関連ライブラリー,Java Mail,DIコンテナ関連</td>
-		</tr>
-	</table>
-	<br />
-	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java_Platform,_Enterprise_Edition</CITE>
-        </p>
-
-        <h3>Application Programming Interface(API)</h3>
-        <p>
-	Javaでは関数群のことを指します<br />
-	クラスやインタフェースの形で提供されています<br />
-	APIは数多く存在する為、使い方は公式サイトで調べます<br /><br />
-	<CITE>参考文献：http://docs.oracle.com/javase/jp/8/api/</CITE>
-        </p>
-
-        <h3>Java Virtual Machine(JavaVM,JVM)</h3>
-        <p>
-	Java言語で作られたプログラムを実行するためのソフトウェアです<br />
-	JREに含まれています<br />
-	実行させるにはソースコードをコンパイルしてクラスファイルを作成する必要がある<br /><br />
-	<CITE>参考文献：http://ja.wikipedia.org/wiki/Java仮想マシン</CITE>
-        </p>
+         <h3>オブジェクトの分類方法</h3>
+	<p>
+         <h4>名詞の分類(名詞、名詞句、名詞節)</h4>
+	オブジェクトは「長くても」「短くても」「物理的であっても」「概念的であっても」<br />
+	すべて名詞の性質を持ちます。<br />
+	つまり、名詞の性質さえ持っていれば、すべてオブジェクトとして認識されます。<br />
+	<CENTER><img src="images/obj/4.JPG" border="0" width="80%" height="80%"></CENTER>
+         <h4>Tips</h5>
+	文字に色がついた部分は全て主語となり、名詞の役割をしている。<br />
+	<h5>名詞</h5>
+	　<font color = "red"><B>English</B></font> is easy.<br />
+	　<I>英語は簡単です。</I><br />
+	<h5>名詞句(２語以上からなり、内部にSVがないもの)</h5>
+	　<font color = "red"><B>To study English</B></font> is easy.<br />
+	　<I>英語を勉強することは簡単です。</I><br />
+	<h5>名詞節(２語以上からなり、内部にSVがあるもの)</h5>
+	　<font color = "red"><B>That you study English</B></font> is easy.<br />
+	　<I>あなたが英語を勉強することは、簡単です。</I><br />
+	</p>
 
 	<br /><br />
-	<center>
-		<a href="basicKnowledge.html">『Javaの基礎知識(1)』に戻る</a>　　
-		<a href="basicKnowledge2.html">『Javaの基礎知識(2)』に戻る</a>
-	</center>
       </div>
 　　　<!-- /#main -->
       <div id="sub">

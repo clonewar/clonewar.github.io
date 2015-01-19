@@ -24,13 +24,14 @@
          <li><a href="install.html" class="active"><SCRIPT>outputTitle(1,0);</SCRIPT></a></li>
          <li><a href="basicKnowledge.html"><SCRIPT>outputTitle(1,1);</SCRIPT></a></li>
          <li><a href="executionAndCompilation.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
-         <li><a href="wait.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
+         <li><a href="object.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
          <li><a href="wait.html"><SCRIPT>outputTitle(1,4);</SCRIPT></a></li>
       </ul>
    </div><!-- /#menu -->
    <div id="contents">
       <h1>Javaプログラムのコンパイルと実行(1)</h1>
       <div id="main">
+         <h2>コンパイラとは</h2>
          <h3>コンパイラの基本構成</h3>
 	<p>
 	「コンパイラ」は入力としてソースコードを受け取り、内部で変換処理を行い<br />
@@ -68,31 +69,31 @@
 	<CENTER><img src="images/execomp/3.JPG" border="0" width="100%" height="100%"></CENTER>
         </p>
 
-        <h2>1.字句解析</h2>
+        <h4>1.字句解析</h4>
 	「public class A { int a; }」といったJavaのソースコードに含まれる文字列を<br />
 	「public」「class」「A」のように、字句という単位に分割します。<br />
         <p>
         </p>
-        <h2>2.構文解析</h2>
+        <h4>2.構文解析</h4>
         <p>
 	文法的に正しいかをチェックします。<br /><br />
 	例えば、「public clas A { int a; }」とJavaのソースコードがなっていると、<br />
 	「clas」の位置には「class」や「interface」が来るはずなので、<br />
 	構文的に間違っている、ということでエラーにします。
         </p>
-        <h2>3.意味解析</h2>
+        <h4>3.意味解析</h4>
         <p>
 	実行できるかをチェックします。<br /><br />
 	例えば、「a = b;」は構文的には合っていますが、<br />
 	a が int型の変数で b がboolean型の変数の場合は代入ができませんから、<br />
 	意味的に間違っている、ということでエラーにします。
         </p>
-        <h2>4.コード最適化</h2>
+        <h4>4.コード最適化</h4>
         <p>
 	実行時により速く実行できるように無駄をなくしたり、<br />
 	オブジェクトコードのサイズをできるだけ小さくするように無駄をなくす処理をします。
         </p>
-        <h2>5.コード生成</h2>
+        <h4>5.コード生成</h4>
         <p>
 	その名のとおりオブジェクトコードを生成します。
         </p>
@@ -108,7 +109,7 @@
 	       <li><a href="install.html"><SCRIPT>outputTitle(1,0);</SCRIPT></a></li>
                <li><a href="basicKnowledge.html"><SCRIPT>outputTitle(1,1);</SCRIPT></a></li>
                <li><a href="executionAndCompilation.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
-               <li><a href="wait.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
+               <li><a href="object.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
                <li><a href="wait.html"><SCRIPT>outputTitle(1,4);</SCRIPT></a></li>
             </ul>
          </div>
