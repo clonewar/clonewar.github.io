@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="imagetoolbar" content="no" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="js/sub.js"></script>
+<script type="text/javascript" src="js/commonString.js"></script>
+<title>JAVA勉強会用</title>
+</head>
+<body>
+<div id="top">
+   <div id="header">
+      <h1><a href="index.html"><SCRIPT>outputTitle(0,0);</SCRIPT></a></h1>
+   </div><!-- /#header -->
+   <div id="menu">
+      <ul>
+         <li><a href="install.html" class="active"><SCRIPT>outputTitle(1,0);</SCRIPT></a></li>
+         <li><a href="basicKnowledge.html"><SCRIPT>outputTitle(1,1);</SCRIPT></a></li>
+         <li><a href="executionAndCompilation.html"><SCRIPT>outputTitle(1,2);</SCRIPT></a></li>
+         <li><a href="object.html"><SCRIPT>outputTitle(1,3);</SCRIPT></a></li>
+         <li><a href="wait.html"><SCRIPT>outputTitle(1,4);</SCRIPT></a></li>
+      </ul>
+   </div><!-- /#menu -->
+   <div id="contents">
+      <h1>オブジェクトの基本概念(2)</h1>
+      <div id="main">
+         <h2>オブジェクト間の関係とは</h2>
+	<p>
+	オブジェクトとオブジェクトの間には、状況によって関係が成り立ちます。<br />
+	オブジェクト間の関係は下図のように『動詞』で表すことができます。<br />
+	<CENTER><img src="images/obj/5.JPG" border="0" width="60%" height="60%"></CENTER><br />
+
+	<CENTER>
+	<table border="1">
+		<tr bgcolor = skyblue>
+			<th colspan="2">動詞の関係</th>
+		</tr>
+		<tr>
+			<td>is-a関係</td><td>オブジェクトAはオブジェクトBである。</td>
+		</tr>
+		<tr>
+			<td>has-a関係</td><td>オブジェクトAはオブジェクトBを持つ。</td>
+		</tr>
+		<tr>
+			<td>その他の関係</td><td>オブジェクトAはオブジェクトBと関係する。</td>
+		</tr>
+	</table>
+	</CENTER>
+	</p>
+
+         <h3>is-a関係</h3>
+         <h4>一般化と特化の関係</h4>
+	<p>
+	『is-a関係』において、一般化されたオブジェクトの属性は特化されたオブジェクトに<br />
+	すべて継承されます。<br /><br />
+	『花子さんは女性である』という文章において、左側にある『花子』というオブジェクトAは<br />
+	『女性』というオブジェクトBの特別な場合です。<br />
+	逆に、右側にある『女性』というオブジェクトBは、<br />
+	『花子』というオブジェクトAを一般化したものになります。<br /><br />
+	<CENTER><img src="images/obj/6.JPG" border="0" width="60%" height="60%"></CENTER>
+
+	下図のように『伊藤さんは男性である』というとき、<br />
+	伊藤さんは男性が備える基本属性をすべて持っていることを意味する。<br /><br />
+	『男性は人間である』というとき、『男性』は『人間』という上位階層から継承された<br />
+	直立歩行、道具の使用、言語の使用、想像性などの基本属性をすべて備えており、<br />
+	その『人間』に『男性』という個別的な属性が付け加えられた、ということを意味する。<br />
+	すなわち<font color = "red">「is-a関係」は階層図で表せる「階層関係」</font>である。<br />
+	<CENTER><img src="images/obj/7.JPG" border="0" width="60%" height="60%"></CENTER>
+	</p>
+
+         <h3>has-a関係</h3>
+         <h4>集約と分化の関係</h4>
+	<p>
+	『has-a関係』で分化された側のオブジェクトは、集約された側のオブジェクトの一部になります。<br /><br />
+	『ディスクドライブはステッピングモータを持つ』という文章において、<br />
+	左側の『ディスクドライブ』というオブジェクトAは、『ステッピングモータ』というオブジェクトB<br />
+	のような部品が集まったものであり、右側の『ステッピングモータ』というオブジェクトBは<br />
+	『ディスクドライブ』というオブジェクトAを分解して部品化したものです。<br /><br />
+	<CENTER>
+		<img src="images/obj/8.JPG" border="0" width="60%" height="60%"><br />
+		<img src="images/obj/9.JPG" border="0" width="90%" height="90%"><br />
+	</CENTER>
+	<br />
+	『西村はパソコンを持っている』という文章の場合はどうでしょうか。<br />
+	この場合にも『has-a関係』が成り立つように思われがちですが、これは『所有する関係』<br />
+	すなわち『owns関係』となる為『has-a関係』とは別のものとして扱います。<br />
+	『has-a関係』を判別する方法は、<font color="red">オブジェクトの一方が他方の一部分を構成するメンバになりうるか否か</font>で判断する。<br />
+	</p>
+
+
+         <h3>その他の関係</h3>
+         <h4>does-a関係</h4>
+	<p>
+	その他の関係は、一般的に「～する」という一般動詞としてのdo動詞で代表される<br />
+	「does-a関係」であると考えられます。<br />
+	しかし、「does-a関係」では「is-a関係」と「has-a関係」以外のすべての関係を<br />
+	含むことになり、抽象的になりすぎる為「owns」「needs」などのような、<br />
+	関係の意味をより明確にする用語を用いるのが一般的です。<br /><br />
+	
+	下図のように『高橋は美術品を買う』という文書で、左側の『高橋』というオブジェクトA自体は<br />
+	『美術品』というオブジェクトBとまったく関係ないが、『買う』という動詞を通して<br />
+	お互いに関連付けられます。<br /><br />
+	<CENTER>
+		<img src="images/obj/10.JPG" border="0" width="60%" height="60%"><br />
+	</CENTER>
+
+	「does-a関係」に代表される「関連付け」関係は、大きく『自動詞関係』と『他動詞関係』<br />
+	の２つに分類されます。<br /><br />
+         <h5>他動詞関係</h5>
+	関係の主体になるオブジェクトと、対象になるオブジェクトの両方が名詞の性質を持ちます。<br /><br />
+         <h5>自動詞関係</h5>
+	関係の主体になるオブジェクトは名詞の性質を持ちますが、関係の対象になるオブジェクト<br />
+	は前名句(前置詞 + 名詞)の形で、副詞的に使用されます。<br />
+	例えば下図のように、コンピュータを好きになった「妻がコンピュータと一緒に眠る」<br />
+	とするときの、妻とコンピュータの関係(wifeとwith a computer)は自動詞関係<br />
+	と見なされます。<br />
+	<CENTER>
+		<img src="images/obj/11.JPG" border="0" width="60%" height="60%"><br />
+	</CENTER>
+	</p>
+
+
+	<br /><br />
+	<center><a href="object.html">『オブジェクトの基本概念(1)』に戻る</a></center>
+      </div>
+　　　<!-- /#main -->
+      <div id="sub">
+         <div class="section">
+            <h2>Category</h2>
+            <ul>
+               <li><a href="object.html">オブジェクトとは</a></li>
+               <li><a href="object2.html">オブジェクト間の関係とは</a></li>
+            </ul>
+         </div>
+	 <!-- /.section -->
+<!--
+         <div class="section">
+            <h2>Category</h2>
+            <ul>
+               <li><a href="index.html">MENU1</a></li>
+               <li><a href="index.html">MENU2</a></li>
+               <li><a href="index.html">MENU3</a></li>
+               <li><a href="index.html">MENU4</a></li>
+               <li><a href="index.html">MENU5</a></li>
+               <li><a href="index.html">MENU6</a></li>
+            </ul>
+         </div>
+-->
+	 <!-- /.section -->
+      </div><!-- /#sub -->
+   </div><!-- /#contents -->
+   <div id="pageTop">
+      <a href="#">ページのトップへ戻る</a>
+   </div><!-- /#pageTop -->
+   <div id="footer">
+      <div class="copyright">Copyright &copy; 2014 CloneWarProject  All Rights Reserved.</div>
+   </div><!-- /footer -->
+</div><!-- /top -->
+</body>
+</html>
